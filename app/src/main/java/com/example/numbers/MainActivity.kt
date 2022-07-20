@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     private fun getNewNumbers() {
         progress.visibility = View.VISIBLE
         Handler(Looper.getMainLooper()).postDelayed({
-            val newNum = list[list.size - 1].number
+            val newNum =  list[list.size - 1].number
             for (i in newNum + 1..newNum + 5) {
                 val obj = ModalNumbers(i)
                 list.add(obj)
